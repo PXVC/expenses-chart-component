@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<title>Frontend Mentor | Expenses chart component</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="header__balance">
+					<p>My balance</p>
+					<h2>$921.48</h2>
+				</div>
+				<img src="images/logo.svg" alt="logo" />
+			</div>
+			<main class="main">
+				<h2 class="main__heading">Spending - Last 7 days</h2>
+				<div class="main__chart chart">
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+					<div class="chart__content">
+						<div class="chart__col"></div>
+						<div class="chart__tooltip"></div>
+						<div class="chart__day"></div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="expenses">
+					<div class="expenses__total-month">
+						<p>Total this month</p>
+						<h2 class="expenses__total-month-amount">$478.33</h2>
+					</div>
+					<div class="expenses__increment-month">
+						<h3 class="expenses__increment-percentage">+2.4%</h3>
+						<p>from last month</p>
+					</div>
+				</div>
+			</main>
+		</div>
+		<!-- Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month -->
+
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io/challenges" target="__blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="http://www.frontendmentor/profile/PXVC" target="__blank">PXVC</a
+			>.
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

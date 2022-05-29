@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(27deg, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.47rem;
+  font-weight: 400;
+}
+
+.header {
+  background-color: hsl(10deg, 79%, 65%);
+  color: hsl(33deg, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2rem;
+  line-height: 3rem;
+}
+
+[alt=logo] {
+  width: 6.5rem;
+}
+
+.main {
+  background-color: hsl(33deg, 100%, 98%);
+  color: hsl(25deg, 47%, 15%);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 1.5rem;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.chart__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Wednesday */
+}
+.chart__content .chart__tooltip {
+  order: 0;
+  background-color: hsl(25deg, 47%, 15%);
+  color: hsl(33deg, 100%, 98%);
+  font-size: 1.3rem;
+  padding: 0.4rem 0.6rem;
+  transform: translateY(-1rem);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.chart__content .chart__col {
+  order: 1;
+  background-color: hsl(10deg, 79%, 65%);
+  width: 75%;
+  border-radius: 0.35rem;
+}
+.chart__content .chart__col:hover {
+  opacity: 0.7;
+}
+.chart__content .chart__col:hover + .chart__tooltip {
+  opacity: 1;
+}
+.chart__content .chart__day {
+  order: 2;
+  margin: 0.3rem 0 2rem;
+}
+.chart__content:nth-child(3) .chart__col {
+  background-color: hsl(186deg, 34%, 60%);
+}
+
+.divider {
+  width: 100%;
+  height: 0.3rem;
+  background-color: hsl(27deg, 66%, 92%);
+  margin-bottom: 2rem;
+}
+
+.expenses {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.expenses p {
+  color: hsl(28deg, 10%, 53%);
+}
+.expenses__total-month h2 {
+  font-size: 3rem;
+}
+.expenses__increment-month {
+  text-align: right;
+}
+.expenses__increment-month h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

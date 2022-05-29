@@ -1,0 +1,108 @@
+.header {
+	background-color: $soft-red;
+	color: $very-pale-orange;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	// width: 91.3vw;
+	// max-width: 91.3vw;
+	border-radius: 1rem;
+	padding: 2rem;
+	line-height: 3rem;
+}
+
+[alt="logo"] {
+	width: 6.5rem;
+}
+
+.main {
+	background-color: $very-pale-orange;
+	color: $dark-brown;
+	border-radius: 1rem;
+	padding: 2rem;
+	margin-top: 1.5rem;
+}
+
+.chart {
+	$self: &;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin-top: 5rem;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		#{$self}__tooltip {
+			order: 0;
+			background-color: $dark-brown;
+			color: $very-pale-orange;
+			font-size: 1.3rem;
+			padding: 0.4rem 0.6rem;
+			transform: translateY(-1rem);
+			opacity: 0;
+			transition: opacity 0.2s;
+		}
+
+		#{$self}__col {
+			order: 1;
+			background-color: $soft-red;
+			width: 75%;
+			border-radius: 0.35rem;
+
+			&:hover {
+				opacity: 0.7;
+
+				& + #{$self}__tooltip {
+					opacity: 1;
+				}
+			}
+		}
+
+		#{$self}__day {
+			order: 2;
+			margin: 0.3rem 0 2rem;
+		}
+
+		/* Wednesday */
+		&:nth-child(3) {
+			#{$self}__col {
+				background-color: $cyan;
+			}
+		}
+	}
+}
+
+.divider {
+	width: 100%;
+	height: 0.3rem;
+	background-color: $cream;
+	margin-bottom: 2rem;
+}
+
+.expenses {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	p {
+		color: $medium-brown;
+	}
+
+	&__total-month {
+		h2 {
+			font-size: 3rem;
+		}
+	}
+
+	&__increment-month {
+		text-align: right;
+
+		h3 {
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+	}
+}
